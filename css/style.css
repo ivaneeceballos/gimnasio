@@ -151,7 +151,8 @@
 /************ 480px ************/
 @media (max-width: 480px) {
   .mapa {
-    max-width: 50vh; } }
+    max-width: 50vh;
+    height: 50vh; } }
 
 .footer {
   display: flex;
