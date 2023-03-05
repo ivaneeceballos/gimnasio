@@ -2,6 +2,16 @@
 /*mixin*/
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&family=Roboto:wght@100&display=swap");
 /****** secciones_pagina ******/
+/********************************* HEADER *********************************/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 5px solid #00b341; }
+
+.header a {
+  text-decoration: none; }
+
 .logo {
   width: 100px;
   height: 100px;
@@ -13,7 +23,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 10px solid #00b341; }
+  border-bottom: 5px solid #00b341; }
+
+.header a {
+  text-decoration: none; }
 
 .nav {
   display: flex;
@@ -45,6 +58,8 @@
   color: black;
   font-weight: bold; }
 
+/********************************* FIN DE HEADER *********************************/
+/************************************* SECCION MAIN INDEX *************************************/
 .main h1 {
   color: #00b341;
   text-align: center;
@@ -92,7 +107,51 @@
   border-radius: 100%; }
 
 .img_main-principal {
-  max-width: 130vh; }
+  width: 100vh; }
+
+/************************************* FIN DE SECCION MAIN INDEX *************************************/
+/***************************************** SECCION MAIN MAPA *****************************************/
+.main_mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.main_mapa h1 {
+  color: #00b341;
+  text-align: center;
+  margin: 10px 0 20px 0; }
+
+.main_mapa h2 {
+  color: #00b341;
+  text-align: center;
+  margin: 5px 0 20px 0; }
+
+.mapa {
+  max-width: 100vh; }
+
+/***************************************** FIN SECCION MAIN MAPA *****************************************/
+/*************************************** comienzo media querie ***************************************/
+/************ 768px ************/
+@media (max-width: 768px) {
+  /************************************* SECCION MAIN INDEX *************************************/
+  .section_img-parrafo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center; }
+  .img_main-principal {
+    width: 100%; }
+  /************************************* FIN DE  SECCION MAIN INDEX *************************************/
+  /************************************* SECCION MAIN MAPA *************************************/
+  .mapa {
+    max-width: 70vh; }
+  /************************************* FIN DE SECCION MAIN MAPA *************************************/ }
+
+/************ 480px ************/
+@media (max-width: 480px) {
+  .mapa {
+    max-width: 50vh; } }
 
 .footer {
   display: flex;
