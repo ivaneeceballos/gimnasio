@@ -1,0 +1,46 @@
+.logo {
+  width: 100px;
+  height: 100px;
+  border: 5px solid $colors-primario;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 10px solid $colors-primario;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .nav_flex ul li a {
+    font-size: 20px;
+    font-weight: 700;
+  } 
+  .header__nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .header__nav li a {
+    background-color: $colors-terciario;
+    color: $colors-primario;
+    text-decoration: none;
+    border: 3px $colors-primario transparent;
+    border-radius: 10px;
+    margin: 7px;
+    padding: 6px;
+  }
+  
+  .header__nav li a:hover {
+    background-color: $colors-primario;
+    color: $colors-secundario;
+    font-weight: bold;
+  }
+  

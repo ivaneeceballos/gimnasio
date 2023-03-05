@@ -1,0 +1,7 @@
+/*mixin*/
+
+@mixin fondo-color ($fondo, $colors,$type){
+    color: $colors;
+    background-color: $fondo;
+    font-family: $type;
+}

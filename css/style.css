@@ -1,0 +1,147 @@
+/****** utilidades ******/
+/*mixin*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&family=Roboto:wght@100&display=swap");
+/****** secciones_pagina ******/
+.logo {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #00b341;
+  border-radius: 50%;
+  margin-bottom: 10px; }
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 10px solid #00b341; }
+
+.nav {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse; }
+
+.nav_flex ul li a {
+  font-size: 20px;
+  font-weight: 700; }
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; }
+
+.header__nav li a {
+  background-color: #2c2c2c;
+  color: #00b341;
+  text-decoration: none;
+  border: 3px #00b341 transparent;
+  border-radius: 10px;
+  margin: 7px;
+  padding: 6px; }
+
+.header__nav li a:hover {
+  background-color: #00b341;
+  color: black;
+  font-weight: bold; }
+
+.main h1 {
+  color: #00b341;
+  text-align: center;
+  margin: 10px 0 20px 0; }
+
+.section_img-parrafo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly; }
+
+.section_img-parrafo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+.section_img-parrafo div a {
+  margin: 15px;
+  background-color: #00b341;
+  border-radius: 50%; }
+
+.section_img-parrafo div a svg {
+  margin: 15px; }
+
+.section_img-parrafo div a:active {
+  transform: scale(0.9); }
+
+.flex_h2-p {
+  display: flex;
+  flex-direction: column; }
+
+.flex_h2-p h2 {
+  color: #00b341;
+  text-align: center;
+  margin: 5px 0 20px 0; }
+
+.flex_h2-p p {
+  max-width: 400px;
+  font-size: 15px;
+  color: #00b341;
+  margin: 0 0px 0 10px; }
+
+.a {
+  background-color: #00b341;
+  border-radius: 100%; }
+
+.img_main-principal {
+  max-width: 130vh; }
+
+.footer {
+  display: flex;
+  justify-content: center; }
+
+.contenedor_redes {
+  width: 30%;
+  height: 46px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "whatapp facebook instegram";
+  justify-items: center;
+  align-items: center; }
+
+.whatapp {
+  grid-area: whatapp; }
+
+.whatapp:hover {
+  border: 1px solid black;
+  background-color: green;
+  border-radius: 50%;
+  transition: .5s; }
+
+.whatapp:active {
+  transform: scale(0.9); }
+
+.facebook {
+  grid-area: facebook; }
+
+.facebook:hover {
+  border: 1px solid black;
+  background-color: #030368;
+  border-radius: 20%;
+  transition: .5s; }
+
+.facebook:active {
+  transform: scale(0.9); }
+
+.instegram {
+  grid-area: instegram; }
+
+.instegram:hover {
+  border: 1px solid black;
+  background-color: #e670ab;
+  border-radius: 20%;
+  transition: .5s; }
+
+.instegram:active {
+  transform: scale(0.9); }
+
+body {
+  background-color: #2c2c2c; }

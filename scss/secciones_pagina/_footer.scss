@@ -1,0 +1,60 @@
+.footer {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_redes {
+    width: 30%;
+    height: 46px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "whatapp facebook instegram";
+    justify-items: center;
+    align-items: center;
+}
+
+.whatapp {
+    grid-area: whatapp;
+}
+
+.whatapp:hover {
+    border: 1px solid black;
+    background-color: green;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.whatapp:active {
+    transform: scale(0.9);
+}
+
+.facebook {
+    grid-area: facebook;
+}
+
+.facebook:hover {
+    border: 1px solid black;
+    background-color: rgb(3, 3, 104);
+    border-radius: 20%;
+    transition: .5s;
+}
+
+.facebook:active {
+    transform: scale(0.9);
+}
+
+.instegram {
+    grid-area: instegram;
+}
+
+.instegram:hover {
+    border: 1px solid black;
+    background-color: rgb(230, 112, 171);
+    border-radius: 20%;
+    transition: .5s;
+}
+
+.instegram:active {
+    transform: scale(0.9);
+}

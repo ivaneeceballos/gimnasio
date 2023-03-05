@@ -1,0 +1,15 @@
+
+/****** utilidades ******/
+@import "utilidades/colors";
+@import "utilidades/mixin";
+@import "utilidades/type";
+
+/****** secciones_pagina ******/
+@import "secciones_pagina/_header.scss";
+@import "secciones_pagina/_main-index.scss";
+@import "secciones_pagina/_footer.scss";
+
+body {
+    background-color: $colors-terciario;
+}
+
